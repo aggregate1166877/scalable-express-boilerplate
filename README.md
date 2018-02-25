@@ -1,4 +1,4 @@
-# Basic server-side Express boilerplate
+# Simple but scalable server-side Express boilerplate
 Scalable server-side NodeJS Express boilerplate with routes, controllers, and
 middleware that does nothing (except print out "Hello, world!" of course).
 
