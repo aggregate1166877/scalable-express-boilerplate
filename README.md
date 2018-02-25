@@ -86,7 +86,7 @@ Specifically, a seemingly single piece of functionality is separated into many
 different files. This is make code more maintainable in the long run, and makes
 it easier to find the exact functionality you're looking for in larger projects.
 
-There are a three important directories in this application. In order of execution, when making a web request:
+There are a three important directories in this application. When making a web request, the order of execution is as follows:
   * server/routes
   * server/middlewares
   * server/controllers
