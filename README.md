@@ -107,6 +107,8 @@ templates, you can create new routes and controllers to respond to new endpoints
 want to intercept and preprocess data for whatever reason, have a look at how the authenticator
 does it.
 
+Finally, all configs are stored in `server/config` and tests are stored in `server/test`.
+
 # License
 Licence: [unlicense](http://unlicense.org/). This means I don't care what you
 do with this code. Change it, sell it, spit on it, burn it, or feed it to your
