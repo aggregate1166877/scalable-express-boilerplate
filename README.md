@@ -1,10 +1,10 @@
-# Simple but scalable server-side Express boilerplate
-Scalable server-side NodeJS Express boilerplate with routes, controllers, and
+# Simple but scalable NodeJS Express boilerplate
+A scalable 'hello world' NodeJS Express boilerplate application with routes, controllers, and
 middleware that does nothing (except print out "Hello, world!" of course).
 
-The idea is to have a well structured not-too-minimal working environment for
-a RESTful API server that could potentially grow into a large project. This
-project uses babel transpiling for compatibility on older systems, and
+The idea behind this project is to have a well structured not-too-minimal working environment for
+a RESTful API server that could potentially grow into a larger project. This
+project uses [Babel](https://www.npmjs.com/package/babel-cli) transpiling for compatibility on older systems, and
 [mocha](https://mochajs.org/) with [supertest](https://www.npmjs.com/package/supertest)
 for tests. Note that the tests included are merely proof concept, and do not
 cover all code.
