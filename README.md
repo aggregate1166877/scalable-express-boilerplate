@@ -3,17 +3,17 @@ Scalable server-side NodeJS Express boilerplate with routes, controllers, and
 middleware that does nothing (except print out "Hello, world!" of course).
 
 The idea is to have a well structured not-too-minimal working environment for
-a restful API server that could potentially grow into a large project. This
+a RESTful API server that could potentially grow into a large project. This
 project uses babel transpiling for compatibility on older systems, and
 [mocha](https://mochajs.org/) with [supertest](https://www.npmjs.com/package/supertest)
-for tests. Note that the tests included are merely proof concept, and does not
+for tests. Note that the tests included are merely proof concept, and do not
 cover all code.
 
 I created this to help me more easily set up new API projects quickly. If this
 helps someone else, bonus.
 
 The authentication middleware used in this project is merely a proof-of-concept
-placeholder, and should not be used in the real world. NPM packages such as
+placeholder I wrote, and should not be used in the real world. NPM packages such as
 [passport-jwt](https://www.npmjs.com/package/passport-jwt) and
 [acl](https://www.npmjs.com/package/acl) are great packages for actual
 authentication.
@@ -37,8 +37,7 @@ npm run dev
 Open http://127.0.0.1:3017 in your browser. It should give you a message
 stating that "Your API server is up and awaiting requests."
 
-I personally want my server to automatically restart if code changes while I'm
-developing. This can easily be achieved with [nodemon]() (npm install -g nodemon).
+During development, I personally want my Node instance to automatically restart when code changes occur. This can easily be achieved with [nodemon]() (npm install -g nodemon).
 ```bash
 nodemon npm run dev
 ```
@@ -71,10 +70,10 @@ Two things should happen:
  * You should receive a JSON message containing "Hello, world!"
  * Your terminal should display an auth warning along with `--> API server received: "Hello, server!"`
 
-If you receive an error stating that a token is required, ensure that you have
-set your content type to `application/json` inside your HTTP query application.
+*If you receive an error stating that a token is required, ensure that you have
+set your content type to `application/json` inside your HTTP query application.*
 
-You may want to send the same request using GET. Due to the fact that
+You may want to send the same request with the above token using GET. Due to the fact that
 sending auth tokens via URL params is a security problem, you should use GET headers
 instead, because it achieves the same result as using `body` for POSTs. This
 boilerplate will work just fine when using GET headers. There's an amazing wiki
