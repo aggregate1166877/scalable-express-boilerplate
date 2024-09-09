@@ -1,6 +1,7 @@
-# Simple but scalable NodeJS Express boilerplate
+# Scalable TS NodeJS Express boilerplate
 A scalable 'hello world' NodeJS Express boilerplate application with routes, controllers, and
-middleware that does nothing (except print out "Hello, world!" of course).
+middleware that does nothing (except print out "Hello, world!" of course). The
+server is TS-bundled out of the box.
 
 The idea behind this project is to have a well structured not-too-minimal working environment for
 a RESTful API server that could potentially grow into a larger project. This
@@ -46,11 +47,6 @@ For production use, first build the project, and then start.
 ```bash
 npm run build
 npm start
-```
-
-Running tests:
-```bash
-npm run test
 ```
 
 # Some application usage examples
@@ -108,10 +104,3 @@ want to intercept and preprocess data for whatever reason, have a look at how th
 does it.
 
 Finally, all configs are stored in `server/config` and tests are stored in `server/tests`.
-
-# License
-Licence: [unlicense](http://unlicense.org/). This means I don't care what you
-do with this code. Change it, sell it, spit on it, burn it, or feed it to your
-dog. If running this causes Zeus to strike down your cat, I don't care.
-
-If in doubt, refer to the LICENSE file as it covers everything.
