@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response } from 'express';
 
-export const handleErrors = (err: any, req: Request, res: Response, next: NextFunction): void => {
+export const handleErrors = (err: any, _: Request, res: Response): void => {
   if (err instanceof SyntaxError) {
     // Handle JSON errors
     res.status(400).json({ error: true, message: 'JSON syntax error.' });

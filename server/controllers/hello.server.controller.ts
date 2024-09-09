@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { Request, Response } from 'express';
 
-const usage = (req: Request, res: Response): void => {
+const usage = (_: Request, res: Response): void => {
   res.json({
     'Available routes': {
       // ================================================================================ //
@@ -79,7 +79,7 @@ const deleteMessage = (req: Request, res: Response): void => {
   res.json({ error: false, 'message': 'Nothing to delete.' });
 };
 
-const notYetImplemented = (req: Request, res: Response): void => {
+const notYetImplemented = (_: Request, res: Response): void => {
   res.json({ error: true, 'message': 'Not yet implemented (by you).' });
 };
 

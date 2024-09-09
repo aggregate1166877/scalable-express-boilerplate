@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction } from 'express';
+import { Router } from 'express';
 import hello from '../controllers/hello.server.controller';
 import auth from '../middlewares/authenticator';
 
